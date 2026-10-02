@@ -33,7 +33,9 @@ app.post("/notes", (req, res) => {
         let notes = JSON.parse(data);
 
         let newNote = {
-            id: notes.length + 1,
+            id: notes.length + 1
+
+
             title: req.body.title,
             content: req.body.content
         };
